@@ -1,0 +1,205 @@
+/* main content */
+* {
+  box-sizing: border-box; 
+}
+body {
+  background-color: #ffffff;
+  font-family: Helvetica, sans-serif;
+  font-weight: 800;
+  margin: 5px; 
+}
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+/* Track 
+::-webkit-scrollbar-track {
+  box-shadow: inset 5px 5px 5px rgb(55, 255, 0); 
+  border-radius: 10px;
+} */
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 255, 255); 
+  border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000000; 
+}
+@media screen and (min-width: 720px) {
+.viewport{
+  margin-left: 180px;
+}
+.viewport h2{
+  background: linear-gradient(45deg, rgb(255, 119, 8), rgb(255, 0, 0));
+  background-clip: text;
+  color: transparent;
+}
+.text {
+  display: grid;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 20px;
+  margin-inline-end: 0px;
+  text-align: justify;
+  margin-left: 5px;
+  margin-right: 5px;
+  box-shadow: 0 0 10px rgba(255, 250, 173, 0.884);
+  padding: 5px 5px 5px 5px;
+  background-color: rgba(246, 255, 213, 0.473);;
+}
+.sidenav {
+  height: 100%;
+  max-width: max-content;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f3ffdd;
+  overflow-x:scroll;
+  padding-top: 20px;   
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #0400ff;
+  display: block;
+  border-radius: 5px;
+  margin: 15px 5px 5px 5px;
+  background-color: #fffffff0;
+  box-shadow: 0 0 10px rgba(88, 255, 152, 0.704);
+  padding: 10px 10px;
+  border-radius: 4px;
+  border-radius: 10px 0px 10px 0px;
+  height: fit-content;
+  width: fit-content;
+  align-items: center;
+  width: 80%;
+  margin-right: 10px;
+
+}
+.sidenav p {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #000000;
+  display: block;
+}
+.sidenav a:hover {
+  color: #000000;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 15px 5px 5px 5px;
+  background-color: #b8ff8ff0;
+  box-shadow: 0 0 10px rgba(157, 114, 114, 0.704);
+  padding: 10px 10px;
+  border-radius: 0px 10px 0px 10px;
+  height: fit-content;
+  width: fit-content;
+  align-items: center;
+  width: 80%;
+}
+.mobile-menu-button{
+  display: none;
+}
+}
+@media screen and (max-width: 720px) {
+  .viewport{
+    margin-left: 5px;
+  }
+  .viewport h2{
+    background: linear-gradient(45deg, rgb(255, 119, 8), rgb(255, 0, 0));
+    background-clip: text;
+    color: transparent;
+  }
+  .viewport h3{
+    color: #0400ff;
+  }
+  .text {
+    display: grid;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 20px;
+    margin-inline-end: 0px;
+    text-align: justify;
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: 0 0 10px rgba(255, 250, 173, 0.884);
+    padding: 5px 5px 5px 5px;
+    background-color: rgba(246, 255, 213, 0.473);;
+  }
+
+  .title{
+    margin-left: 35px;
+  }
+  .nav_details{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+  }
+  .nav_english_medium{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+  }
+  .nav_tamil_medium{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+  }
+  .sidenav a {
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    font-size: 10px;
+    color: #ffffff;
+    margin: 10px 10px 10px 10px;
+    background-color: rgba(103, 173, 70, 0.897);
+    box-shadow: 0 0 10px rgba(179, 255, 217, 0.884);
+    padding: 10px 10px;
+    border-radius: 8px 8px 8px 8px;
+    height: fit-content;
+    width: fit-content;
+    align-items: center;
+    width: 90%;
+    margin-right: 10px;
+    border:double;
+    border-color:rgb(255, 255, 255);
+  }
+  .sidenav p {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #000000;
+    display: block;
+  }
+  .close {
+    /* Show the menu when the 'open' class is present */
+    display: none;
+  }
+  .open {
+    /* Show the menu when the 'open' class is present */
+    display: grid;
+  }
+  .mobile-menu-button {
+    position:fixed;
+    top: 18px;
+    left: 2px;
+    background-color: rgba(255, 115, 0, 0.651);
+    color: rgb(0, 0, 0);
+    border:double;
+    border-color:rgb(241, 86, 14);
+    padding:2.3%;
+    border-radius: 2px 5px 5px 2px;
+  }
+  .chapter{
+    background-color: #000000;
+  }
+  }
+  
